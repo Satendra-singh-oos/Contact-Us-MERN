@@ -1,6 +1,8 @@
-import dontenv from "dotenv";
+// import dontenv from "dotenv";
 
-dontenv.config();
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const config = {
   PORT: process.env.PORT || 5000,
@@ -9,4 +11,4 @@ const config = {
   USER_PASS: process.env.USER_PASS,
 };
 
-export default config;
+module.exports = config;
